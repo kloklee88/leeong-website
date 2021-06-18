@@ -1,21 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
-      <div class="dropdown button-dropdown">
-        <div ngbDropdown>
-          <a class="dropdown-toggle" ngbDropdownToggle>
-              <span class="button-bar"></span>
-              <span class="button-bar"></span>
-              <span class="button-bar"></span>
-          </a>
-           <div ngbDropdownMenu>
-             <a class="dropdown-header">Vacations</a>
-             <a class="dropdown-item" href="/examples/landing">Pasadena, Maryland</a>
-             <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="/auntie">Auntie's Antics</a>
-             
-           </div>
-         </div>
-      </div>
         <div class="navbar-translate">
             <a class="navbar-brand" [routerLink]="['/index']" placement="bottom">
                 Home
@@ -34,6 +18,12 @@
                       <p class="d-lg-none d-xl-none">Github</p>
                   </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="auntie">
+                    <i class="fab fa-rebel"></i>
+                    <p class="d-lg-none d-xl-none">Auntie's Antics</p>
+                </a>
+            </li>
             </ul>
         </div>
     </div>
