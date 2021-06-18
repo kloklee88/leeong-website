@@ -9070,7 +9070,7 @@ Created using IcoMoon - icomoon.io
 
 .profile-page .title {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 5px !important;
 }
 
 .profile-page .category {
