@@ -6,8 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { AgmCoreModule } from '@agm/core';
 
-import { LandingComponent } from './landing/landing.component';
-import { ExamplesComponent } from './examples.component';
+import { PasadenaComponent } from './pasadena/pasadena.component';
+import { VacationsComponent } from './vacations.component';
 
 @NgModule({
     imports: [
@@ -21,8 +21,8 @@ import { ExamplesComponent } from './examples.component';
         })
     ],
     declarations: [
-        LandingComponent,
-        ExamplesComponent
+        PasadenaComponent,
+        VacationsComponent
     ]
 })
-export class ExamplesModule { }
+export class VacationsModule { }

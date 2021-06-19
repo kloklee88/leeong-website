@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import * as Rellax from 'rellax';
 
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss']
+  selector: 'app-pasadena',
+  templateUrl: './pasadena.component.html',
+  styleUrls: ['./pasadena.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class PasadenaComponent implements OnInit {
   data : Date = new Date();
   focus;
   focus1;
