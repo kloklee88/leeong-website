@@ -1,7 +1,17 @@
 .carousel-image {
-    max-height: 500px !important;
+    max-height: 75vh !important;
     width: auto;
 }
-#gallery {
-    width: fit-content;
+.background-black {
+    background-color: black;
+}
+.background-grey {
+    background-color: grey;
+}
+.video-carousel {
+    height: 40vh;
+}
+.video {
+    width: 70%    !important;
+    height: 35vh   !important;
 }
