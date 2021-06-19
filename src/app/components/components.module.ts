@@ -11,6 +11,7 @@ import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
 import { AuntieComponent } from './auntie/auntie.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
     imports: [
@@ -19,7 +20,10 @@ import { AuntieComponent } from './auntie/auntie.component';
         NgbModule,
         NouisliderModule,
         RouterModule,
-        JwBootstrapSwitchNg2Module
+        JwBootstrapSwitchNg2Module,
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyAbfskcTo1rQaXr2260hW3ugtaic2Ho-P8'
+        })
       ],
     declarations: [
         ComponentsComponent,
