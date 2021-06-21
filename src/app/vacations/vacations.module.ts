@@ -8,6 +8,7 @@ import { AgmCoreModule } from '@agm/core';
 
 import { PasadenaComponent } from './pasadena/pasadena.component';
 import { VacationsComponent } from './vacations.component';
+import { DisneyComponent } from './disney/disney.component';
 
 @NgModule({
     imports: [
@@ -22,6 +23,7 @@ import { VacationsComponent } from './vacations.component';
     ],
     declarations: [
         PasadenaComponent,
+        DisneyComponent,
         VacationsComponent
     ]
 })

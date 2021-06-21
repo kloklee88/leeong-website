@@ -21,7 +21,7 @@
                             <a href="vacations/pasadena" class="btn btn-primary btn-lg btn-round" role="button">
                                 Pasadena, Maryland
                             </a><br>
-                            <a href="#" class="btn btn-primary btn-lg btn-round disabled" role="button">
+                            <a href="vacations/disney" class="btn btn-primary btn-lg btn-round" role="button">
                                 Disney World, Florida
                             </a><br>
                             <a href="#" class="btn btn-primary btn-lg btn-round disabled" role="button">
@@ -39,21 +39,17 @@
                 <div class="row">
                     <div class="col-md-12">
                         <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false"
-                            [zoomControl]="false" (mapClick)="mapClicked($event)">
+                            [zoomControl]="false">
 
                             <agm-marker *ngFor="let m of markers; let i = index"
                                 (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
-                                [label]="m.label" [markerDraggable]="m.draggable" (dragEnd)="markerDragEnd(m, $event)">
+                                [label]="m.label">
 
                                 <agm-info-window>
-                                    <strong>InfoWindow content</strong>
+                                    <strong>{{m.name}}</strong>
                                 </agm-info-window>
 
                             </agm-marker>
-
-                            <agm-circle [latitude]="lat + 0.3" [longitude]="lng" [radius]="5000" [fillColor]="'red'"
-                                [circleDraggable]="true" [editable]="true">
-                            </agm-circle>
                         </agm-map>
                     </div>
                 </div>

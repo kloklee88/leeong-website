@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap.scss";
+
+.carousel-image {
+    max-height: 75vh !important;
+    width: auto;
+}
+.background-black {
+    background-color: black;
+}
+.background-grey {
+    background-color: grey;
+}
+.video-carousel {
+    height: 40vh;
+}
+.video {
+    width: 70%    !important;
+    height: 35vh   !important;
+}

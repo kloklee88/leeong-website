@@ -21,9 +21,7 @@ import { AgmCoreModule } from '@agm/core';
         NouisliderModule,
         RouterModule,
         JwBootstrapSwitchNg2Module,
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyAbfskcTo1rQaXr2260hW3ugtaic2Ho-P8'
-        })
+        AgmCoreModule
       ],
     declarations: [
         ComponentsComponent,

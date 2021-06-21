@@ -9,6 +9,7 @@ import { VacationsModule } from './vacations/vacations.module';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        VacationsModule
+        VacationsModule,
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyAbfskcTo1rQaXr2260hW3ugtaic2Ho-P8'
+        })
     ],
     providers: [],
     bootstrap: [AppComponent]

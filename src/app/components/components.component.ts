@@ -12,7 +12,7 @@ import { MouseEvent } from '@agm/core';
         margin-top: 5rem;
     }
     agm-map {
-        height: 300px;
+        height: 500px;
       }
     `]
 })
@@ -21,11 +21,11 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     data: Date = new Date();
 
     // google maps zoom level
-    zoom: number = 8;
+    zoom: number = 4;
 
     // initial center position for the map
-    lat: number = 51.673858;
-    lng: number = 7.815982;
+    lat: number = 38.9072;
+    lng: number = -77.0369;
 
     page = 4;
     page1 = 5;
@@ -45,22 +45,39 @@ export class ComponentsComponent implements OnInit, OnDestroy {
 
     markers: marker[] = [
         {
-            lat: 51.673858,
-            lng: 7.815982,
+            lat: 39.1073,
+            lng: -76.5711,
             label: 'A',
-            draggable: true
-        },
-        {
-            lat: 51.373858,
-            lng: 7.215982,
-            label: 'B',
+            name: 'Pasadena',
             draggable: false
         },
         {
-            lat: 51.723858,
-            lng: 7.895982,
+            lat: 28.3772,
+            lng: -81.5707,
+            label: 'B',
+            name: 'Disney World',
+            draggable: false
+        },
+        {
+            lat: 39.5117,
+            lng: -79.3156,
             label: 'C',
-            draggable: true
+            name: 'Deep Creek',
+            draggable: false
+        },
+        {
+            lat: 37.2251,
+            lng: -76.6671,
+            label: 'D',
+            name: 'Kingsmill Resort',
+            draggable: false
+        },
+        {
+            lat: 37.3488,
+            lng: -76.7309,
+            label: 'E',
+            name: 'Great Wolf Lodge',
+            draggable: false
         }
     ]
 
@@ -95,23 +112,12 @@ export class ComponentsComponent implements OnInit, OnDestroy {
     clickedMarker(label: string, index: number) {
         console.log(`clicked the marker: ${label || index}`)
     }
-
-    mapClicked($event: MouseEvent) {
-        this.markers.push({
-            lat: $event.coords.lat,
-            lng: $event.coords.lng,
-            draggable: true
-        });
-    }
-
-    markerDragEnd(m: marker, $event: MouseEvent) {
-        console.log('dragEnd', m, $event);
-    }
 }
 
 interface marker {
     lat: number;
     lng: number;
     label?: string;
+    name: string;
     draggable: boolean;
 }

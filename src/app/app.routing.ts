@@ -7,12 +7,14 @@ import { ComponentsComponent } from './components/components.component';
 import { PasadenaComponent } from './vacations/pasadena/pasadena.component';
 import { AuntieComponent } from './components/auntie/auntie.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import { DisneyComponent } from './vacations/disney/disney.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'vacations/pasadena',     component: PasadenaComponent },
+    { path: 'vacations/disney',     component: DisneyComponent },
     { path: 'auntie',     component: AuntieComponent }
 ];
 
