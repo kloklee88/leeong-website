@@ -9,6 +9,9 @@ import { AgmCoreModule } from '@agm/core';
 import { PasadenaComponent } from './pasadena/pasadena.component';
 import { VacationsComponent } from './vacations.component';
 import { DisneyComponent } from './disney/disney.component';
+import { RehobethComponent } from './rehobeth/rehobeth.component';
+import { DeepcreekComponent } from './deepcreek/deepcreek.component';
+import { KingsmillComponent } from './kingsmill/kingsmill.component';
 
 @NgModule({
     imports: [
@@ -24,7 +27,10 @@ import { DisneyComponent } from './disney/disney.component';
     declarations: [
         PasadenaComponent,
         DisneyComponent,
-        VacationsComponent
+        VacationsComponent,
+        RehobethComponent,
+        DeepcreekComponent,
+        KingsmillComponent
     ]
 })
 export class VacationsModule { }

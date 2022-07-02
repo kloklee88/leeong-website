@@ -78,6 +78,13 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             label: 'E',
             name: 'Great Wolf Lodge',
             draggable: false
+        },
+        {
+            lat: 38.705190,
+            lng: -75.090490,
+            label: 'F',
+            name: 'Rehobeth Beach',
+            draggable: false
         }
     ]
 
